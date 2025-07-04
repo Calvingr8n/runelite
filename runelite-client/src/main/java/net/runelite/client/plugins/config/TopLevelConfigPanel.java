@@ -60,6 +60,7 @@ class TopLevelConfigPanel extends PluginPanel
 		EventBus eventBus,
 		PluginListPanel pluginListPanel,
 		ProfilePanel profilePanel,
+		JxCharacterPanel jxCharacterPanel,
 		Provider<PluginHubPanel> pluginHubPanelProvider
 	)
 	{
@@ -83,6 +84,8 @@ class TopLevelConfigPanel extends PluginPanel
 		pluginListPanelTab = addTab(pluginListPanel.getMuxer(), "config_icon_lg.png", "Configuration");
 
 		addTab(profilePanel, "profile_icon.png", "Profiles");
+
+		addTab(jxCharacterPanel, "jx_icon.png", "Characters");
 
 		addTab(pluginHubPanelProvider, "plugin_hub_icon.png", "Plugin Hub");
 
